@@ -96,6 +96,10 @@ public class TopBar extends LinearLayout {
         tvTopMore.setText(str);
     }
 
+    /***
+     * 左边返回按钮文字
+     * @return
+     */
     public TextView getTvTopBack() {
         if (tvTopBack == null) {
             tvTopBack = (TextView) view.findViewById(R.id.tv_top_back);
@@ -103,6 +107,10 @@ public class TopBar extends LinearLayout {
         return tvTopBack;
     }
 
+    /**
+     * 左边返回按钮图标
+     * @return
+     */
     public ImageView getIvTopBack() {
         if (ivTopBack == null) {
             ivTopBack = (ImageView) view.findViewById(R.id.iv_top_back);
@@ -110,7 +118,10 @@ public class TopBar extends LinearLayout {
         return ivTopBack;
     }
 
-
+    /**
+     * 返回按钮布局
+     * @return
+     */
     public RelativeLayout getRlTopBack() {
         if (rlTopBack == null) {
             rlTopBack = (RelativeLayout) view.findViewById(R.id.rl_top_back);
@@ -118,6 +129,10 @@ public class TopBar extends LinearLayout {
         return rlTopBack;
     }
 
+    /**
+     * 中间标题控件
+     * @return
+     */
     public TextView getTvTopTitle() {
         if (tvTopTitle == null) {
             tvTopTitle = (TextView) view.findViewById(R.id.tv_top_title);
@@ -125,13 +140,19 @@ public class TopBar extends LinearLayout {
         return tvTopTitle;
     }
 
+    /**
+     * y右边更多按钮
+     * @return
+     */
     public TextView getTvTopMore() {
         if (tvTopMore == null) {
             tvTopMore = (TextView) view.findViewById(R.id.tv_top_more);
         }
         return tvTopMore;
     }
-
+    /**
+     * TopBar布局
+     */
     public LinearLayout getLlTop() {
         if (llTop == null) {
             llTop = (LinearLayout) view.findViewById(R.id.ll_top);
